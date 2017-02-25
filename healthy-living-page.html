@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout360 App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" id="title">Workout360 </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="nav navbar-nav navbar-right" id="desktop-toolbar">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="user-name"><img class="img-circle" src="assets/img/Profile Pics/Screen Shot 2017-02-09 at 12.39.41 AM.jpg" width="25px" height="25px"> John <i class="fa fa-chevron-down fa-fw"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="social-profile-page.html"><i class="fa fa-user fa-fw"></i> Profile </a></li>
+                            <li role="presentation"><a href="index.html"><i class="fa fa-power-off fa-fw"></i>Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="social-profile-page.html">Profile </a></li>
+                    <li role="presentation"><a href="routines-page.html">Routines </a></li>
+                    <li role="presentation"><a href="schedule-page.html">Schedule </a></li>
+                    <li class="active" role="presentation"><a href="healthy-living-page.html" id="nav-tab-active">Healthy Living</a></li>
+                    <li role="presentation"><a href="about-us-page.html">About-Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h1 class="text-center text-primary">Meals: </h1>
+        <p class="text-center">Choose the type of meal to search for:</p>
+        <div class="container-fluid" id="meals-container">
+            <div class="row" id="meal-choices">
+                <div class="col-md-6 col-xs-12 meal-selection">
+                    <header>
+                        <h3 class="text-center">Breakfast </h3></header>
+                    <a href="breakfast-selection-page.html"><img class="img-responsive meal" src="assets/img/breakfast.jpg" data-bs-hover-animate="pulse"></a>
+                </div>
+                <div class="col-md-6 col-xs-12 meal-selection">
+                    <header>
+                        <h3 class="text-center">Lunch </h3></header>
+                    <a href="lunch-selection-page.html"><img class="img-responsive meal" src="assets/img/Lunch.jpg" data-bs-hover-animate="pulse"></a>
+                </div>
+                <div class="col-md-6 col-xs-12 meal-selection">
+                    <header>
+                        <h3 class="text-center">Dinner </h3></header>
+                    <a href="dinner-selection-page.html"><img class="img-responsive meal" src="assets/img/05_Salmon.jpg" data-bs-hover-animate="pulse"></a>
+                </div>
+                <div class="col-md-6 col-xs-12 meal-selection">
+                    <header>
+                        <h3 class="text-center">Deserts/Snacks </h3></header>
+                    <a href="dessert-selection-page.html"><img class="img-responsive meal" src="assets/img/desserts.jpg" data-bs-hover-animate="pulse"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="my-meals-container">
+            <h2 class="text-primary">My Saved Meals:</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12 meal-selection">
+                    <a href="assets/img/simple-recipes-for-breakfast.jpg" data-lightbox="photos"><img class="img-responsive saved-meals" src="assets/img/simple-recipes-for-breakfast.jpg"></a>
+                    <p>Sunny-Side Up on Toast w/ Tomato's </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 meal-selection">
+                    <a href="assets/img/RU188547.jpg" data-lightbox="photos"><img class="img-responsive saved-meals" src="assets/img/RU188547.jpg"></a>
+                    <p>Cinnamon &amp; Bananna Oatmeal </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 meal-selection">
+                    <a href="assets/img/CCHAP-110F_Breakfast-Burrito_s4x3.jpg.rend.hgtvcom.966.725.jpeg" data-lightbox="photos"><img class="img-responsive saved-meals" src="assets/img/CCHAP-110F_Breakfast-Burrito_s4x3.jpg.rend.hgtvcom.966.725.jpeg"></a>
+                    <p>Egg &amp; Veggie Burrito </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 meal-selection">
+                    <a href="assets/img/exps106689_SD2401784A10_13_5b_WEB.jpg" data-lightbox="photos"><img class="img-responsive saved-meals" src="assets/img/exps106689_SD2401784A10_13_5b_WEB.jpg"></a>
+                    <p>Waffle w/Nutella &amp; Fruit Sandwich </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery-container"></div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center" id="footer-row">
+                <div class="col-sm-4 col-xs-12 footer-about" id="title-container">
+                    <div class="social-links social-icons"></div>
+                    <h3><a href="index.html">Workout360 </a></h3></div>
+                <div class="col-sm-4 col-xs-12 footer-navigation" id="link-container">
+                    <p class="links"><a href="index.html">• Home </a><a href="social-profile-page.html"> • Profile </a><a href="routines-page.html"> • Routines </a><a href="schedule-page.html"> • Schedule </a><a href="healthy-living-page.html" id="footer-tab-active"> • Healthy Living </a>
+                        <br><a href="about-us-page.html"> • About Us</a></p>
+                </div>
+                <div class="col-sm-4 col-xs-12 footer-about" id="social-icons">
+                    <p class="company-name">Workout360 © 2017 </p>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

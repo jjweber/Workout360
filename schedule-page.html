@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout360 App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" id="title">Workout360 </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="nav navbar-nav navbar-right" id="desktop-toolbar">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="user-name"><img class="img-circle" src="assets/img/Profile Pics/Screen Shot 2017-02-09 at 12.39.41 AM.jpg" width="25px" height="25px"> John <i class="fa fa-chevron-down fa-fw"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="social-profile-page.html"><i class="fa fa-user fa-fw"></i> Profile </a></li>
+                            <li role="presentation"><a href="index.html"><i class="fa fa-power-off fa-fw"></i>Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="social-profile-page.html">Profile </a></li>
+                    <li role="presentation"><a href="routines-page.html">Routines </a></li>
+                    <li class="active" role="presentation"><a href="schedule-page.html" id="nav-tab-active">Schedule </a></li>
+                    <li role="presentation"><a href="healthy-living-page.html">Healthy Living</a></li>
+                    <li role="presentation"><a href="about-us-page.html">About-Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container main">
+            <h1>My Workout Schedule</h1>
+            <div class="row schedule-row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="container-fluid">
+                        <div id="cal-code" class=" col-md-6 col-sm-12 well" style="border:3px solid">
+    <div class="col-md-12" style="padding:0px;">
+      <br>
+        <table class="table table-bordered table-style table-responsive">
+          <tr>
+            <th colspan="2"><a href="?ym=<?php echo $prev; ?>"><span class="glyphicon glyphicon-chevron-left"></span></a></th>
+            <th colspan="3"> Feb - 2017<!--?php echo $html_title; ?--></th>
+            <th colspan="2"><a href="?ym=<?php echo $next; ?>"><span class="glyphicon glyphicon-chevron-right"></span></a></th>
+          </tr>
+          <tr>
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+           </tr>
+          <tr>             
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr>              
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td class="today">24</td>
+            <td>25</td>
+          </tr>
+          <tr>              
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          
+          <!--?php
+            foreach ($weeks as $week) {
+              echo $week;
+            };
+          ?-->
+        </table>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <!-- <?php
+// Set your timezone!!
+date_default_timezone_set('Asia/Dhaka');
+
+// Get prev & next month
+if (isset($_GET['ym'])) {
+	$ym = $_GET['ym'];
+} else {
+	// This month
+	$ym = date('Y-m');
+}
+
+// Check format
+$timestamp = strtotime($ym,"-01");
+if ($timestamp === false) {
+	$timestamp = time();
+}
+
+// Today
+$today = date('Y-m-j', time());
+
+// For H3 title
+$html_title = date('M - Y', $timestamp);
+
+// Create prev & next month link     mktime(hour,minute,second,month,day,year)
+$prev = date('Y-m', mktime(0, 0, 0, date('m', $timestamp)-1, 1, date('Y', $timestamp)));
+$next = date('Y-m', mktime(0, 0, 0, date('m', $timestamp)+1, 1, date('Y', $timestamp)));
+
+// Number of days in the month
+$day_count = date('t', $timestamp);
+
+// 0:Sun 1:Mon 2:Tue ...
+$str = date('w', mktime(0, 0, 0, date('m', $timestamp), 1, date('Y', $timestamp)));
+
+
+// Create Calendar!!
+$weeks = array();
+$week = '';
+
+// Add empty cell
+$week .= str_repeat('<td></td>', $str);
+
+for ( $day = 1; $day <= $day_count; $day++, $str++) {
+
+	$date = $ym.'-'.$day;
+
+	if ($today == $date) {
+		$week .= '<td class="today">'.$day;
+	} else {
+		$week .= '<td>'.$day;
+	}
+	$week .= '</td>';
+
+	// End of the week OR End of the month
+	if ($str % 7 == 6 || $day == $day_count) {
+
+		if($day == $day_count) {
+			// Add empty cell
+			$week .= str_repeat('<td></td>', 6 - ($str % 7));
+		}
+
+		$weeks[] = '<tr>'.$week.'</tr>';
+
+		// Prepare for new week
+		$week = '';
+
+	}
+
+}
+
+?>-->
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h2 class="text-center">Today's Workout</h2>
+                    <div id="scheduled-workouts">
+                        <h3 class="bg-primary text-center">Chest Exercises</h3>
+                        <div class="carousel slide" data-ride="carousel" data-interval="false" id="chestCarousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"><img src="assets/img/Exercises/Screen Shot 2017-02-11 at 10.42.31 PM.jpg" alt="Slide Image" id="image-slide1" class="d-block img-fluid"></div>
+                                <div class="item"><img src="assets/img/Exercises/Chest1.jpg" alt="Slide Image" id="image-slide2" class="d-block img-fluid"></div>
+                            </div>
+                            <div><a class="left carousel-control" href="#chestCarousel" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#chestCarousel"
+                                role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i><span class="sr-only">Next</span></a></div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#chestCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#chestCarousel" data-slide-to="1"></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div id="startWorkout"><a class="btn btn-success" role="button" href="#" id="startWorkoutBtn">Start Workout</a></div>
+                </div>
+                <div class="col-xs-12">
+                    <h2>Today's Meals</h2>
+                    <div id="todays-meals">
+                        <div class="container-fluid" id="weekdays-container">
+                            <div class="row" id="weekdays">
+                                <div class="col-sm-3 col-xs-12" id="days">
+                                    <h3 class="bg-primary">Breakfast </h3>
+                                    <a href="assets/img/LOW-CARB FRENCH TOAST .jpg" data-lightbox="photos"><img class="img-thumbnail img-responsive" src="assets/img/LOW-CARB FRENCH TOAST .jpg" data-bs-hover-animate="pulse"></a>
+                                    <p>Low-Carb French Toast </p>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <h3 class="bg-primary">Lunch </h3>
+                                    <a href="assets/img/BZT Panini.jpg" data-lightbox="photos"><img class="img-thumbnail img-responsive" src="assets/img/BZT Panini.jpg" data-bs-hover-animate="pulse"></a>
+                                    <p>"BZT" Panini </p>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <h3 class="bg-primary">Dinner </h3>
+                                    <a href="assets/img/Crispy Chicken Parmesan With Tomatoes And Mozzarella.jpg" data-lightbox="photos"><img class="img-thumbnail img-responsive" src="assets/img/Crispy Chicken Parmesan With Tomatoes And Mozzarella.jpg" data-bs-hover-animate="pulse"></a>
+                                    <p>Crispy Chicken Parmesan With Tomatoes And Mozzarella </p>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <h3 class="bg-primary">Dessert </h3>
+                                    <a href="assets/img/Fudgy Cream Cheese Brownies.jpg" data-lightbox="photos"><img class="img-thumbnail img-responsive" src="assets/img/Fudgy Cream Cheese Brownies.jpg" data-bs-hover-animate="pulse"></a>
+                                    <p>Fudgy Cream Cheese Brownies </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center" id="footer-row">
+                <div class="col-sm-4 col-xs-12 footer-about" id="title-container">
+                    <div class="social-links social-icons"></div>
+                    <h3><a href="index.html">Workout360 </a></h3></div>
+                <div class="col-sm-4 col-xs-12 footer-navigation" id="link-container">
+                    <p class="links"><a href="index.html">• Home </a><a href="social-profile-page.html"> • Profile </a><a href="routines-page.html"> • Routines </a><a href="schedule-page.html" id="footer-tab-active"> • Schedule </a><a href="healthy-living-page.html"> • Healthy Living </a>
+                        <br><a href="about-us-page.html"> • About Us</a></p>
+                </div>
+                <div class="col-sm-4 col-xs-12 footer-about" id="social-icons">
+                    <p class="company-name">Workout360 © 2017 </p>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

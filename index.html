@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
@@ -16,50 +19,82 @@
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html">Workout360 </a>
-                <button class="navbar-toggle collapsed hidden" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" id="title">Workout360 </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="demo-Routines.html">Routines </a></li>
-                    <li role="presentation"><a href="demo-Schedule.html">Schedule </a></li>
-                    <li role="presentation"><a href="demo-Goals.html">Goals </a></li>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="nav navbar-nav hidden-xs hidden-sm navbar-right" id="desktop-toolbar">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle hidden" data-toggle="dropdown" aria-expanded="false" href="#"><img class="img-circle" src="assets/img/Profile Pics/Screen Shot 2017-02-09 at 12.39.41 AM.jpg" width="25px" height="25px"> John <i class="fa fa-chevron-down fa-fw"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="social-profile-page.html"><i class="fa fa-user fa-fw"></i> Profile </a></li>
+                            <li role="presentation"><a href="index.html"><i class="fa fa-power-off fa-fw"></i>Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a class="hidden" href="index.html">Profile </a></li>
+                    <li role="presentation"><a class="hidden" href="routines-page.html">Routines </a></li>
+                    <li role="presentation"><a class="hidden" href="schedule-page.html">Schedule </a></li>
+                    <li role="presentation"><a class="hidden" href="healthy-living-page.html">Healthy Living</a></li>
+                    <li class="active" role="presentation"><a class="hidden" href="about-us-page.html" id="nav-tab-active">About-Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="promo">
-        <div class="jumbotron">
-            <h1>Workout360 </h1>
-            <p>Come join us and let us help organize your fitness schedule. We will have you working out and eating healthy in no time. Its never to late to give your life a 360.</p>
-            <p><a class="btn btn-primary btn-lg" role="button" href="demo-Goals.html">Enter </a></p>
+    <div id="container">
+        <div id="promo">
+            <div class="jumbotron" id="jumbotron-block">
+                <h1>Workout360 </h1>
+                <p>Come join us and let us help organize your fitness schedule. We will have you working out and eating healthy in no time. It's never too late to give your life a 360.</p>
+                <p>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="modal" data-target="#modal1">Enter </button>
+                </p>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="login-card"><img src="assets/img/avatar_2x.png" class="profile-img-card">
+                                <p class="profile-name-card"> </p>
+                                <form class="form-signin"><span class="reauth-email"> </span>
+                                    <input class="form-control" type="email" required="" placeholder="Email address" autofocus="" id="inputEmail">
+                                    <input class="form-control" type="password" required="" placeholder="Password" id="inputPassword">
+                                    <div class="checkbox">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <div><a class="btn btn-primary btn-block btn-lg btn-signin" role="button" href="social-profile-page.html">Sign in</a></div>
+                                </form><a href="#modal2" class="forgot-password" data-toggle="modal" data-target="#modal2">Forgot your password?</a>
+                                <br><a href="registration-form.html" class="forgot-password">Create an account!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>Enter your email and we will send you a link to reset your password!</p>
+                            <input type="email" required="" placeholder="Email address" autofocus="" inputmode="email" id="inputEmail"><a class="btn btn-default" role="button" href="index.html">Send </a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-7 footer-navigation">
-                    <h3><a href="#">Workout360 </a></h3>
-                    <p class="links"><strong>·</strong> <a href="#">Home </a> <strong>·</strong> <a href="#">Profile </a> <strong>·</strong> <a href="#">Routines </a> <strong>· </strong><a href="#">Schedule </a>
-                        <br><strong>·</strong> <a href="#">Healthy Living</a> <strong>·</strong> <a href="#">About Us</a></p>
+    <footer class="update-footer">
+        <div class="container-fluid">
+            <div class="row text-center" id="footer-row">
+                <div class="col-sm-4 col-xs-12 footer-about" id="title-container">
+                    <div class="social-links social-icons"></div>
+                    <h3><a href="index.html">Workout360 </a></h3></div>
+                <div class="col-sm-4 col-xs-12 footer-navigation" id="link-container">
+                    <div></div>
+                </div>
+                <div class="col-sm-4 col-xs-12 footer-about" id="social-icons">
                     <p class="company-name">Workout360 © 2017 </p>
-                </div>
-                <div class="col-md-4 col-sm-6 footer-contacts">
-                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                        <p><span class="new-line-span">704 Full Sail Street</span> Somewhere, USA</p>
-                    </div>
-                    <div><i class="fa fa-phone footer-contacts-icon"></i>
-                        <p class="footer-center-info email text-left"> +1 777 123456</p>
-                    </div>
-                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                        <p> <a href="#" target="_blank">jjweber@Workout360.com</a></p>
-                    </div>
-                </div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="col-md-4 footer-about">
-                    <h4>About the company</h4>
-                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-                    </p>
                     <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
                 </div>
             </div>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout360 App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" id="title">Workout360 </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="nav navbar-nav navbar-right" id="desktop-toolbar">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="user-name"><img class="img-circle" src="assets/img/Profile Pics/Screen Shot 2017-02-09 at 12.39.41 AM.jpg" width="25px" height="25px"> John <i class="fa fa-chevron-down fa-fw"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="social-profile-page.html"><i class="fa fa-user fa-fw"></i> Profile </a></li>
+                            <li role="presentation"><a href="index.html"><i class="fa fa-power-off fa-fw"></i>Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="social-profile-page.html">Profile </a></li>
+                    <li role="presentation"><a href="routines-page.html">Routines </a></li>
+                    <li role="presentation"><a href="schedule-page.html">Schedule </a></li>
+                    <li role="presentation"><a href="healthy-living-page.html">Healthy Living</a></li>
+                    <li role="presentation"><a href="about-us-page.html">About-Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><a class="btn btn-primary btn-lg" role="button" href="social-profile-page.html" id="backBtn">Back </a>
+    <div class="main">
+        <div class="container-fluid main">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row goal-row" id="new-goal">
+                        <div class="col-xs-12 goal-field">
+                            <h3 class="text-center text-primary">Create New Goal</h3><span class="reauth-email"> </span>
+                            <p class="text-left form-title">Name of Goal:</p>
+                            <input class="input-lg" type="text" placeholder="Goal Name" autofocus="">
+                        </div>
+                        <div class="col-xs-12 goal-field">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Track Goals in <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Distance </a></li>
+                                    <li role="presentation"><a href="#">Time </a></li>
+                                    <li role="presentation"><a href="#">Wieght </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 goal-field">
+                            <p class="form-title">Details of Goal:</p>
+                            <input class="input-lg" type="text" placeholder="Goal Details">
+                        </div>
+                        <div class="col-xs-12 text-center"><a class="btn btn-success" role="button" href="social-profile-page.html">create new goal</a></div>
+                    </div>
+                    <div class="row goal-row" id="existing-goal">
+                        <div class="col-md-12">
+                            <div class="row text-center">
+                                <div class="col-md-12 goal-field">
+                                    <h3 class="text-center text-primary">Update Existing Goal</h3></div>
+                                <div class="col-md-4 col-xs-12 goal-update">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h6>Goal Weight (lb)</h6>
+                                            <input type="number" placeholder="lbs" min="0" max="300">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h6 class="text-left">Track Progress</h6>
+                                            <div><div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+    <label class="onoffswitch-label" for="myonoffswitch1">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12 goal-update">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h6>Bench Press Max (lb)</h6>
+                                            <input type="number" placeholder="lbs" min="0" max="300">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h6 class="text-left">Track Progress </h6>
+                                            <div><div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" unchecked>
+    <label class="onoffswitch-label" for="myonoffswitch2">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12 goal-update">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h6>Bicep Curl Max (lb)</h6>
+                                            <input type="number" placeholder="lbs" min="0" max="300">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h6 class="text-left">Track Progress </h6>
+                                            <div><div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" unchecked>
+    <label class="onoffswitch-label" for="myonoffswitch3">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 text-center"><a class="btn btn-primary btn-lg" role="button" href="social-profile-page.html">Update </a><a class="btn btn-default btn-lg" role="button" href="social-profile-page.html">Cancel </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center" id="footer-row">
+                <div class="col-sm-4 col-xs-12 footer-about" id="title-container">
+                    <div class="social-links social-icons"></div>
+                    <h3><a href="index.html">Workout360 </a></h3></div>
+                <div class="col-sm-4 col-xs-12 footer-navigation" id="link-container">
+                    <p class="links"><a href="index.html">• Home </a><a href="social-profile-page.html"> • Profile </a><a href="routines-page.html"> • Routines </a><a href="schedule-page.html"> • Schedule </a><a href="healthy-living-page.html"> • Healthy Living </a>
+                        <br><a href="about-us-page.html"> • About Us</a></p>
+                </div>
+                <div class="col-sm-4 col-xs-12 footer-about" id="social-icons">
+                    <p class="company-name">Workout360 © 2017 </p>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

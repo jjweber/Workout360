@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout360 App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html" id="title">Workout360 </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="nav navbar-nav navbar-right" id="desktop-toolbar">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="user-name"><img class="img-circle" src="assets/img/Profile Pics/Screen Shot 2017-02-09 at 12.39.41 AM.jpg" width="25px" height="25px"> John <i class="fa fa-chevron-down fa-fw"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="social-profile-page.html"><i class="fa fa-user fa-fw"></i> Profile </a></li>
+                            <li role="presentation"><a href="index.html"><i class="fa fa-power-off fa-fw"></i>Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="social-profile-page.html">Profile </a></li>
+                    <li role="presentation"><a href="routines-page.html">Routines </a></li>
+                    <li role="presentation"><a href="schedule-page.html">Schedule </a></li>
+                    <li role="presentation"><a href="healthy-living-page.html">Healthy Living</a></li>
+                    <li role="presentation"><a href="about-us-page.html">About-Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12"><a class="text-primary" href="about-us-page.html">• About Us</a></div>
+            <div class="col-xs-12"><a class="text-muted" href="contact-us-page.html">• Contact Us</a></div>
+        </div>
+    </div>
+    <div id="contact-container">
+        <div class="container-fluid" id="info-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center text-primary">Contact Us</h2></div>
+                <div class="col-md-6 col-sm-6 col-xs-12" id="contact-box">
+                    <p class="text-center" id="contact-text">If you have any questions or comments, let us know and we'll get back to you as soon as we can. We take your privacy very serious and will never spam or give out your email address. Let us know how Workout360 can help!</p>
+                    <div class="info-box"><i class="glyphicon glyphicon-map-marker my-info-icons"></i><span class="text-uppercase text-info">Address: </span><span>7704 W. Glenn St., Somewhere, USA</span></div>
+                    <div class="info-box"><i class="glyphicon glyphicon-envelope my-info-icons"></i><span class="text-uppercase text-info">Email: </span><span>jjweber@Workout360.com </span></div>
+                    <div class="info-box"><i class="glyphicon glyphicon-phone-alt my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span> +1 777 123456 </span></div><img class="img-responsive" src="assets/img/SA Google Map.jpg"></div>
+                <div class="col-md-6 col-sm-6 col-xs-12 site-form">
+                    <form id="my-form">
+                        <div class="form-group has-feedback">
+                            <label class="control-label sr-only" for="firstname">First Name</label>
+                            <input class="form-control" type="text" name="firstname" placeholder="First Name" autofocus="" id="firstname"><i class="form-control-feedback fa fa-user" aria-hidden="true"></i></div>
+                        <div class="form-group has-feedback">
+                            <label class="control-label sr-only" for="lastname">Last Name</label>
+                            <input class="form-control" type="text" name="lastname" placeholder="Last Name" id="lastname"><i class="form-control-feedback fa fa-user" aria-hidden="true"></i></div>
+                        <div class="form-group has-feedback">
+                            <label class="control-label sr-only" for="phonenumber">Phone Number</label>
+                            <input class="form-control" type="tel" name="phonenumber" required="" placeholder="Phone" id="phonenumber"><i class="form-control-feedback fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="form-group has-feedback">
+                            <label class="control-label sr-only" for="email">Email Address</label>
+                            <input class="form-control" type="text" name="email" required="" placeholder="Email" id="email"><i class="form-control-feedback fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="form-group has-feedback">
+                            <label class="control-label sr-only" for="messages">Last Name</label>
+                            <textarea class="form-control" rows="8" name="messages" required="" placeholder="Message"></textarea><i class="form-control-feedback fa fa-pencil" aria-hidden="true"></i></div>
+                        <button class="btn btn-default btn-lg" type="submit" id="form-btn">SEND </button>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center" id="footer-row">
+                <div class="col-sm-4 col-xs-12 footer-about" id="title-container">
+                    <div class="social-links social-icons"></div>
+                    <h3><a href="index.html">Workout360 </a></h3></div>
+                <div class="col-sm-4 col-xs-12 footer-navigation" id="link-container">
+                    <p class="links"><a href="index.html">• Home </a><a href="social-profile-page.html"> • Profile </a><a href="routines-page.html"> • Routines </a><a href="schedule-page.html"> • Schedule </a><a href="healthy-living-page.html"> • Healthy Living </a>
+                        <br><a href="about-us-page.html"> • About Us</a></p>
+                </div>
+                <div class="col-sm-4 col-xs-12 footer-about" id="social-icons">
+                    <p class="company-name">Workout360 © 2017 </p>
+                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
